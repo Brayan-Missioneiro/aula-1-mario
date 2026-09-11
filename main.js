@@ -48,6 +48,22 @@ mario.style.width = '150px';
 mario.style.botton = '0';
 
 
+mario.style.marginLeft = '';
+//oculta o botão de iniciar
+gameOver.style.display = 'none';
+//para o áudio de Game Over
+audioGameOver.pause();
+//reinicia o áudio de Game Over
+audioStart.play();
+//verifica se o intervalo do jogo já não está rodando
+if(!gameInterval){
+//cria um novo intervalo para continuar detectando colisões
+gameInterval = setInterval(gameLoop,10);
+//função para fazer o mario pular
+
+
+
+}
 
 }
 
